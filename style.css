@@ -20,8 +20,8 @@ Tags:
 }
 
 :root {
-  --global--font-primary: var(--font-headings, "sbonzixregular", sans-serif);
-  --global--font-secondary: var(--font-base, "sbonzixregular", sans-serif);
+  --global--font-primary: var(--font-headings, "sbonzixregular", sans-serif)!important;
+  --global--font-secondary: var(--font-base, "sbonzixregular", sans-serif)!important;
 }
 
 form p {
