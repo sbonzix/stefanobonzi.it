@@ -1,0 +1,69 @@
+﻿@font-face {
+  font-family: 'sbonzixregular';
+  src: url('http://stefanobonzi.it/wp-content/themes/twentytwentyone-child/sbonzix-webfont.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root {
+  --global--font-primary: var(--font-headings, "sbonzixregular", sans-serif);
+  --global--font-secondary: var(--font-base, "sbonzixregular", sans-serif);
+}
+
+form p {
+  margin-bottom: 1em;
+}
+
+.faq {
+  dd {
+    margin-bottom: 2em;
+  }
+
+  dt {
+    font-size: 1.25em;
+    font-weight: normal;
+    background-color: #fcf;
+  }
+}
+
+cite a,
+a:link,
+a:visited {
+  color: #00c !important;
+}
+
+strong {
+  font-style: normal;
+  font-weight: normal;
+  background-color: #fcf;
+}
+
+em {
+  font-style: normal;
+  font-weight: normal;
+  background-color: #cff;
+}
+
+blockquote p {
+  font-weight: normal;
+}
+
+ins {
+  text-decoration: none;
+  background-color: #cfc;
+}
+
+.nav-links .post-title {
+  font-weight: normal;
+  color: #00c;
+  text-decoration: underline;
+}
+
+a:active,
+a:focus {
+  background: transparent !important;
+}
+
+#site-navigation {
+  text-transform: uppercase;
+}
