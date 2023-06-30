@@ -10,6 +10,9 @@
   --global--font-secondary: var(--font-base, "sbonzixregular", sans-serif);
 }
 
+body {
+  background: url("img/main-bck-body.png") repeat;
+}
 form p {
   margin-bottom: 1em;
 }

@@ -1,27 +1,16 @@
-@charset "UTF-8";
-/*
-Theme Name: sbonzix
-Theme URI: https://stefanobonzi.it/wp-content/themes/twentytwentyone-child/
-Author: Stefano Bonzi
-Author URI: https://stefanobonzi.it/
-Description: Child theme of Twenty Twenty-One
-Template:  twentytwentyone
-Version: 1.0
-License: GNU General Public License v2 or later
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Text Domain: twentytwentyonechild
-Tags: 
-*/
 @font-face {
-  font-family: 'sbonzixregular';
-  src: url('http://stefanobonzi.it/wp-content/themes/twentytwentyone-child/sbonzix-webfont.woff2') format('woff2');
-  font-weight: normal!important;
-  font-style: normal!important;
+  font-family: "sbonzixregular";
+  src: url("http://stefanobonzi.it/wp-content/themes/twentytwentyone-child/sbonzix-webfont.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+:root {
+  --global--font-primary: var(--font-headings, "sbonzixregular", sans-serif);
+  --global--font-secondary: var(--font-base, "sbonzixregular", sans-serif);
 }
 
-:root {
-  --global--font-primary: var(--font-headings, "sbonzixregular", sans-serif)!important;
-  --global--font-secondary: var(--font-base, "sbonzixregular", sans-serif)!important;
+body {
+  background: url("img/main-bck-body.png") repeat;
 }
 
 form p {
@@ -31,10 +20,9 @@ form p {
 .faq dd {
   margin-bottom: 2em;
 }
-
 .faq dt {
   font-size: 1.25em;
-  font-weight: normal!important;
+  font-weight: normal;
   background-color: #fcf;
 }
 
@@ -45,19 +33,19 @@ a:visited {
 }
 
 strong {
-  font-style: normal!important;
-  font-weight: normal!important;
+  font-style: normal;
+  font-weight: normal;
   background-color: #fcf;
 }
 
 em {
-  font-style: normal!important;
-  font-weight: normal!important;
+  font-style: normal;
+  font-weight: normal;
   background-color: #cff;
 }
 
 blockquote p {
-  font-weight: normal!important;
+  font-weight: normal;
 }
 
 ins {
@@ -66,7 +54,7 @@ ins {
 }
 
 .nav-links .post-title {
-  font-weight: normal!important;
+  font-weight: normal;
   color: #00c;
   text-decoration: underline;
 }
@@ -79,3 +67,17 @@ a:focus {
 #site-navigation {
   text-transform: uppercase;
 }
+
+/*
+Theme Name: Twenty Twenty-One Child
+Theme URI: https://stefanobonzi.it/wp-content/themes/twentytwentyone-child/
+Author: Stefano Bonzi
+Author URI: https://stefanobonzi.it/
+Description: Child theme of Twenty Twenty-One
+Template:  twentytwentyone
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: twentytwentyonechild
+Tags: 
+*/
