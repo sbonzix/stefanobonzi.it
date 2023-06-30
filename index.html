@@ -1,0 +1,553 @@
+﻿
+<!doctype html>
+<html lang="it-IT" >
+<head><script data-no-optimize="1">var litespeed_docref=sessionStorage.getItem("litespeed_docref");litespeed_docref&&(Object.defineProperty(document,"referrer",{get:function(){return litespeed_docref}}),sessionStorage.removeItem("litespeed_docref"));</script>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>Blog - Stefano Bonzi</title>
+<meta name='robots' content='max-image-preview:large' />
+<link rel="alternate" type="application/rss+xml" title="Stefano Bonzi &raquo; Feed" href="https://stefanobonzi.it/feed" />
+<link rel="alternate" type="application/rss+xml" title="Stefano Bonzi &raquo; Feed dei commenti" href="https://stefanobonzi.it/comments/feed" />
+<script>
+window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/stefanobonzi.it\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.2.2"}};
+/*! This file is auto-generated */
+!function(e,a,t){var n,r,o,i=a.createElement("canvas"),p=i.getContext&&i.getContext("2d");function s(e,t){p.clearRect(0,0,i.width,i.height),p.fillText(e,0,0);e=i.toDataURL();return p.clearRect(0,0,i.width,i.height),p.fillText(t,0,0),e===i.toDataURL()}function c(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(o=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},r=0;r<o.length;r++)t.supports[o[r]]=function(e){if(p&&p.fillText)switch(p.textBaseline="top",p.font="600 32px Arial",e){case"flag":return s("\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f","\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f")?!1:!s("\ud83c\uddfa\ud83c\uddf3","\ud83c\uddfa\u200b\ud83c\uddf3")&&!s("\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f","\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");case"emoji":return!s("\ud83e\udef1\ud83c\udffb\u200d\ud83e\udef2\ud83c\udfff","\ud83e\udef1\ud83c\udffb\u200b\ud83e\udef2\ud83c\udfff")}return!1}(o[r]),t.supports.everything=t.supports.everything&&t.supports[o[r]],"flag"!==o[r]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[o[r]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(e=t.source||{}).concatemoji?c(e.concatemoji):e.wpemoji&&e.twemoji&&(c(e.twemoji),c(e.wpemoji)))}(window,document,window._wpemojiSettings);
+</script>
+<style>
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 0.07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel='stylesheet' id='wp-block-library-css' href='https://stefanobonzi.it/wp-includes/css/dist/block-library/style.min.css?ver=6.2.2' media='all' />
+<style id='wp-block-library-theme-inline-css'>
+.wp-block-audio figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-audio figcaption{color:hsla(0,0%,100%,.65)}.wp-block-audio{margin:0 0 1em}.wp-block-code{border:1px solid #ccc;border-radius:4px;font-family:Menlo,Consolas,monaco,monospace;padding:.8em 1em}.wp-block-embed figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-embed figcaption{color:hsla(0,0%,100%,.65)}.wp-block-embed{margin:0 0 1em}.blocks-gallery-caption{color:#555;font-size:13px;text-align:center}.is-dark-theme .blocks-gallery-caption{color:hsla(0,0%,100%,.65)}.wp-block-image figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-image figcaption{color:hsla(0,0%,100%,.65)}.wp-block-image{margin:0 0 1em}.wp-block-pullquote{border-bottom:4px solid;border-top:4px solid;color:currentColor;margin-bottom:1.75em}.wp-block-pullquote cite,.wp-block-pullquote footer,.wp-block-pullquote__citation{color:currentColor;font-size:.8125em;font-style:normal;text-transform:uppercase}.wp-block-quote{border-left:.25em solid;margin:0 0 1.75em;padding-left:1em}.wp-block-quote cite,.wp-block-quote footer{color:currentColor;font-size:.8125em;font-style:normal;position:relative}.wp-block-quote.has-text-align-right{border-left:none;border-right:.25em solid;padding-left:0;padding-right:1em}.wp-block-quote.has-text-align-center{border:none;padding-left:0}.wp-block-quote.is-large,.wp-block-quote.is-style-large,.wp-block-quote.is-style-plain{border:none}.wp-block-search .wp-block-search__label{font-weight:700}.wp-block-search__button{border:1px solid #ccc;padding:.375em .625em}:where(.wp-block-group.has-background){padding:1.25em 2.375em}.wp-block-separator.has-css-opacity{opacity:.4}.wp-block-separator{border:none;border-bottom:2px solid;margin-left:auto;margin-right:auto}.wp-block-separator.has-alpha-channel-opacity{opacity:1}.wp-block-separator:not(.is-style-wide):not(.is-style-dots){width:100px}.wp-block-separator.has-background:not(.is-style-dots){border-bottom:none;height:1px}.wp-block-separator.has-background:not(.is-style-wide):not(.is-style-dots){height:2px}.wp-block-table{margin:0 0 1em}.wp-block-table td,.wp-block-table th{word-break:normal}.wp-block-table figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-table figcaption{color:hsla(0,0%,100%,.65)}.wp-block-video figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-video figcaption{color:hsla(0,0%,100%,.65)}.wp-block-video{margin:0 0 1em}.wp-block-template-part.has-background{margin-bottom:0;margin-top:0;padding:1.25em 2.375em}
+</style>
+<link rel='stylesheet' id='classic-theme-styles-css' href='https://stefanobonzi.it/wp-includes/css/classic-themes.min.css?ver=6.2.2' media='all' />
+<style id='global-styles-inline-css'>
+body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #FFFFFF;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--color--dark-gray: #28303D;--wp--preset--color--gray: #39414D;--wp--preset--color--green: #D1E4DD;--wp--preset--color--blue: #D1DFE4;--wp--preset--color--purple: #D1D1E4;--wp--preset--color--red: #E4D1D1;--wp--preset--color--orange: #E4DAD1;--wp--preset--color--yellow: #EEEADD;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--gradient--purple-to-yellow: linear-gradient(160deg, #D1D1E4 0%, #EEEADD 100%);--wp--preset--gradient--yellow-to-purple: linear-gradient(160deg, #EEEADD 0%, #D1D1E4 100%);--wp--preset--gradient--green-to-yellow: linear-gradient(160deg, #D1E4DD 0%, #EEEADD 100%);--wp--preset--gradient--yellow-to-green: linear-gradient(160deg, #EEEADD 0%, #D1E4DD 100%);--wp--preset--gradient--red-to-yellow: linear-gradient(160deg, #E4D1D1 0%, #EEEADD 100%);--wp--preset--gradient--yellow-to-red: linear-gradient(160deg, #EEEADD 0%, #E4D1D1 100%);--wp--preset--gradient--purple-to-red: linear-gradient(160deg, #D1D1E4 0%, #E4D1D1 100%);--wp--preset--gradient--red-to-purple: linear-gradient(160deg, #E4D1D1 0%, #D1D1E4 100%);--wp--preset--duotone--dark-grayscale: url('#wp-duotone-dark-grayscale');--wp--preset--duotone--grayscale: url('#wp-duotone-grayscale');--wp--preset--duotone--purple-yellow: url('#wp-duotone-purple-yellow');--wp--preset--duotone--blue-red: url('#wp-duotone-blue-red');--wp--preset--duotone--midnight: url('#wp-duotone-midnight');--wp--preset--duotone--magenta-yellow: url('#wp-duotone-magenta-yellow');--wp--preset--duotone--purple-green: url('#wp-duotone-purple-green');--wp--preset--duotone--blue-orange: url('#wp-duotone-blue-orange');--wp--preset--font-size--small: 18px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 24px;--wp--preset--font-size--x-large: 42px;--wp--preset--font-size--extra-small: 16px;--wp--preset--font-size--normal: 20px;--wp--preset--font-size--extra-large: 40px;--wp--preset--font-size--huge: 96px;--wp--preset--font-size--gigantic: 144px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:where(.is-layout-flex){gap: 0.5em;}body .is-layout-flow > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-flow > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-flow > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-constrained > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-constrained > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width: var(--wp--style--global--content-size);margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignwide{max-width: var(--wp--style--global--wide-size);}body .is-layout-flex{display: flex;}body .is-layout-flex{flex-wrap: wrap;align-items: center;}body .is-layout-flex > *{margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+.wp-block-navigation a:where(:not(.wp-element-button)){color: inherit;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}
+.wp-block-pullquote{font-size: 1.5em;line-height: 1.6;}
+</style>
+<link rel='stylesheet' id='contact-form-7-css' href='https://stefanobonzi.it/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=5.7.7' media='all' />
+<link rel='stylesheet' id='cookie-law-info-css' href='https://stefanobonzi.it/wp-content/plugins/cookie-law-info/legacy/public/css/cookie-law-info-public.css?ver=3.1.1' media='all' />
+<link rel='stylesheet' id='cookie-law-info-gdpr-css' href='https://stefanobonzi.it/wp-content/plugins/cookie-law-info/legacy/public/css/cookie-law-info-gdpr.css?ver=3.1.1' media='all' />
+<link rel='stylesheet' id='twentywentone-style-css' href='https://stefanobonzi.it/wp-content/themes/twentytwentyone/style.css?ver=1.8' media='all' />
+<link rel='stylesheet' id='twentywentone-child-style-css' href='style.css?ver=1.0' media='all' />
+<link rel='stylesheet' id='twenty-twenty-one-style-css' href='https://stefanobonzi.it/wp-content/themes/twentytwentyone/style.css?ver=1.0' media='all' />
+<style id='twenty-twenty-one-style-inline-css'>
+:root{--global--color-background: #bacaba;--global--color-primary: #000;--global--color-secondary: #000;--button--color-background: #000;--button--color-text-hover: #000;}
+</style>
+<link rel='stylesheet' id='twenty-twenty-one-print-style-css' href='https://stefanobonzi.it/wp-content/themes/twentytwentyone/assets/css/print.css?ver=1.0' media='print' />
+<style id='wp-typography-custom-inline-css'>
+sup{vertical-align: 60%;font-size: 75%;line-height: 100%}sub{vertical-align: -10%;font-size: 75%;line-height: 100%}.amp{font-family: Baskerville, "Goudy Old Style", "Palatino", "Book Antiqua", "Warnock Pro", serif;font-weight: normal;font-style: italic;font-size: 1.1em;line-height: 1em}.caps{font-size: 90%}.dquo{margin-left:-.40em}.quo{margin-left:-.2em}
+</style>
+<style id='wp-typography-safari-font-workaround-inline-css'>
+body {-webkit-font-feature-settings: "liga";font-feature-settings: "liga";-ms-font-feature-settings: normal;}
+</style>
+<script src='https://stefanobonzi.it/wp-includes/js/jquery/jquery.min.js?ver=3.6.4' id='jquery-core-js'></script>
+<script src='https://stefanobonzi.it/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.0' id='jquery-migrate-js'></script>
+<script id='cookie-law-info-js-extra'>
+var Cli_Data = {"nn_cookie_ids":["CookieLawInfoConsent","cookielawinfo-checkbox-necessary","cookielawinfo-checkbox-functional","cookielawinfo-checkbox-performance","cookielawinfo-checkbox-analytics","cookielawinfo-checkbox-advertisement","cookielawinfo-checkbox-others"],"cookielist":[],"non_necessary_cookies":{"necessary":["CookieLawInfoConsent"]},"ccpaEnabled":"","ccpaRegionBased":"","ccpaBarEnabled":"","strictlyEnabled":["necessary","obligatoire"],"ccpaType":"gdpr","js_blocking":"1","custom_integration":"","triggerDomRefresh":"","secure_cookies":""};
+var cli_cookiebar_settings = {"animate_speed_hide":"500","animate_speed_show":"500","background":"#424242","border":"#dd3333","border_on":"","button_1_button_colour":"#4d9600","button_1_button_hover":"#3e7800","button_1_link_colour":"#ffffff","button_1_as_button":"1","button_1_new_win":"","button_2_button_colour":"#333","button_2_button_hover":"#292929","button_2_link_colour":"#ffffff","button_2_as_button":"","button_2_hidebar":"","button_3_button_colour":"#4d9600","button_3_button_hover":"#3e7800","button_3_link_colour":"#fff","button_3_as_button":"1","button_3_new_win":"","button_4_button_colour":"#efc921","button_4_button_hover":"#bfa11a","button_4_link_colour":"#333333","button_4_as_button":"1","button_7_button_colour":"#61a229","button_7_button_hover":"#4e8221","button_7_link_colour":"#fff","button_7_as_button":"1","button_7_new_win":"","font_family":"Helvetica, Arial, sans-serif","header_fix":"1","notify_animate_hide":"1","notify_animate_show":"1","notify_div_id":"#cookie-law-info-bar","notify_position_horizontal":"right","notify_position_vertical":"top","scroll_close":"","scroll_close_reload":"","accept_close_reload":"","reject_close_reload":"","showagain_tab":"1","showagain_background":"#fff","showagain_border":"#000","showagain_div_id":"#cookie-law-info-again","showagain_x_position":"100px","text":"#ffffff","show_once_yn":"","show_once":"10000","logging_on":"","as_popup":"","popup_overlay":"1","bar_heading_text":"Cookies","cookie_bar_as":"banner","popup_showagain_position":"bottom-right","widget_position":"left"};
+var log_object = {"ajax_url":"https:\/\/stefanobonzi.it\/wp-admin\/admin-ajax.php"};
+</script>
+<script src='https://stefanobonzi.it/wp-content/plugins/cookie-law-info/legacy/public/js/cookie-law-info-public.js?ver=3.1.1' id='cookie-law-info-js'></script>
+<link rel="https://api.w.org/" href="https://stefanobonzi.it/wp-json/" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://stefanobonzi.it/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://stefanobonzi.it/wp-includes/wlwmanifest.xml" />
+<meta name="generator" content="WordPress 6.2.2" />
+<style id="custom-background-css">
+body.custom-background { background-color: #bacaba; }
+</style>
+	<style id="wpforms-css-vars-root">
+				:root {
+					--wpforms-field-border-radius: 3px;
+--wpforms-field-background-color: #ffffff;
+--wpforms-field-border-color: rgba( 0, 0, 0, 0.25 );
+--wpforms-field-text-color: rgba( 0, 0, 0, 0.7 );
+--wpforms-label-color: rgba( 0, 0, 0, 0.85 );
+--wpforms-label-sublabel-color: rgba( 0, 0, 0, 0.55 );
+--wpforms-label-error-color: #d63637;
+--wpforms-button-border-radius: 3px;
+--wpforms-button-background-color: #066aab;
+--wpforms-button-text-color: #ffffff;
+--wpforms-field-size-input-height: 43px;
+--wpforms-field-size-input-spacing: 15px;
+--wpforms-field-size-font-size: 16px;
+--wpforms-field-size-line-height: 19px;
+--wpforms-field-size-padding-h: 14px;
+--wpforms-field-size-checkbox-size: 16px;
+--wpforms-field-size-sublabel-spacing: 5px;
+--wpforms-field-size-icon-size: 1;
+--wpforms-label-size-font-size: 16px;
+--wpforms-label-size-line-height: 19px;
+--wpforms-label-size-sublabel-font-size: 14px;
+--wpforms-label-size-sublabel-line-height: 17px;
+--wpforms-button-size-font-size: 17px;
+--wpforms-button-size-height: 41px;
+--wpforms-button-size-padding-h: 15px;
+--wpforms-button-size-margin-top: 10px;
+
+				}
+			</style></head>
+
+<body class="blog logged-in custom-background wp-embed-responsive is-light-theme no-js hfeed has-main-navigation">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-dark-grayscale"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0 0.49803921568627" /><feFuncG type="table" tableValues="0 0.49803921568627" /><feFuncB type="table" tableValues="0 0.49803921568627" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-grayscale"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0 1" /><feFuncG type="table" tableValues="0 1" /><feFuncB type="table" tableValues="0 1" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-purple-yellow"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0.54901960784314 0.98823529411765" /><feFuncG type="table" tableValues="0 1" /><feFuncB type="table" tableValues="0.71764705882353 0.25490196078431" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-blue-red"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0 1" /><feFuncG type="table" tableValues="0 0.27843137254902" /><feFuncB type="table" tableValues="0.5921568627451 0.27843137254902" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-midnight"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0 0" /><feFuncG type="table" tableValues="0 0.64705882352941" /><feFuncB type="table" tableValues="0 1" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-magenta-yellow"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0.78039215686275 1" /><feFuncG type="table" tableValues="0 0.94901960784314" /><feFuncB type="table" tableValues="0.35294117647059 0.47058823529412" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-purple-green"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0.65098039215686 0.40392156862745" /><feFuncG type="table" tableValues="0 1" /><feFuncB type="table" tableValues="0.44705882352941 0.4" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-blue-orange"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0.098039215686275 1" /><feFuncG type="table" tableValues="0 0.66274509803922" /><feFuncB type="table" tableValues="0.84705882352941 0.41960784313725" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><div id="page" class="site">
+	<a class="skip-link screen-reader-text" href="#content">
+		Salta al contenuto	</a>
+
+	
+<header id="masthead" class="site-header has-title-and-tagline has-menu">
+
+	
+
+<div class="site-branding">
+
+	<!--
+						<p class="site-title"><a href="https://stefanobonzi.it/">Stefano Bonzi</a></p>
+			-->
+
+
+
+
+		<a href="https://stefanobonzi.it/" title="Stefano Bonzi" rel="home">
+			<svg version="1.1" id="star-sbonzix" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0" y="0"
+				 width="200" height="80" viewBox="0 0 634.6 184.979" xml:space="preserve">
+				<g>
+					<path d="M523.424,21.627c-5.734-2.672-10.16-2.254-13.277,1.252c-1.449,1.67-2.604,3.662-3.467,5.971
+						c-0.863,2.31-1.225,4.606-1.084,6.889c0.137,2.284,0.848,4.329,2.129,6.137c1.279,1.81,3.34,3.048,6.18,3.716
+						c5.51,1.336,10.91-1.169,16.199-7.516C535.448,31.62,533.221,26.137,523.424,21.627z"/>
+					<path d="M634.575,175.544c-22.992-21.766-63.436-69.549-64.326-76.842c6.234-11.078,14.418-21.628,24.549-31.648
+						c-1.279-8.518-4.648-13.027-10.104-13.528c-4.564,6.68-8.838,12.818-12.818,18.413s-7.723,10.76-11.23,15.49
+						c-3.563-7.068-6.875-13.264-9.938-18.58c-3.061-5.315-5.873-9.812-8.434-13.486c-7.508-4.678-13.123-1.038-16.854,10.872
+						c-2.353-7.93-6.69-9.5-13.019-4.692c-0.947,9.853-1.615,19.861-2.004,30.019c-0.391,10.16-0.447,20.584-0.168,31.272
+						c0.087,3.708,0.238,7.074,0.45,10.112c-0.598-1.057-1.273-1.95-2.05-2.639c-1.225-1.086-2.838-1.809-4.842-2.171
+						s-4.51-0.376-7.516-0.042s-6.652,0.947-10.939,1.838c-7.461,1.559-13.527,2.268-18.203,2.129s-8.268-0.765-10.773-1.879
+						c-1.225-0.556-1.127-2.088,0.293-4.593s4.146-6.317,8.184-11.44c4.035-5.121,9.365-11.69,15.99-19.707
+						c6.625-8.016,14.584-17.786,23.883-29.31c-8.129-3.674-17.773-6.263-28.934-7.766c-11.162-1.503-23.84-2.476-38.037-2.923
+						c-6.512,0.668-7.068,6.43-1.67,17.286c10.299-0.446,18.775-0.543,25.428-0.292c6.65,0.25,11.482,1.407,14.488,3.465
+						c-7.404,9.743-13.959,18.217-19.666,25.426c-5.707,7.211-10.563,13.445-14.57,18.705c-4.01,5.262-7.154,9.729-9.438,13.402
+						c-1.131,1.82-2.049,3.518-2.756,5.092c0.104-0.677,0.207-1.367,0.313-2.085c0.668-4.563,1.211-9.532,1.629-14.905
+						s0.639-10.91,0.668-16.617c0.027-5.707-0.25-11.161-0.834-16.367c-0.586-5.205-1.533-9.923-2.84-14.154
+						c-1.309-4.23-3.131-7.57-5.469-10.021c-2.953-3.061-6.293-5.357-10.021-6.889c-3.73-1.531-7.545-2.309-11.439-2.338
+						c-3.896-0.028-7.697,0.682-11.398,2.129c-3.703,1.448-6.945,3.62-9.729,6.513c-4.955,5.01-7.795,9.214-8.518,12.609
+						c-0.389-2.727-0.781-5.231-1.168-7.515c-0.391-2.283-0.795-4.259-1.211-5.929c-0.418-1.67-0.877-2.964-1.379-3.883
+						c-0.5-0.918-1.057-1.377-1.67-1.377c-0.891,0-2.018,0.306-3.381,0.918c-1.365,0.613-2.674,1.392-3.926,2.338
+						c-1.252,0.948-2.324,2.004-3.215,3.173s-1.281,2.338-1.168,3.507c0.445,6.625,0.889,13.208,1.336,19.749
+						c0.419,6.154,0.771,12.187,1.066,18.117c-1.206-9.614-5.395-19.176-12.59-28.681c-2.674-3.507-5.68-6.625-9.02-9.352
+						c-3.34-2.727-6.861-4.955-10.563-6.681c-3.703-1.725-7.504-2.867-11.398-3.423c-3.896-0.556-7.697-0.417-11.398,0.417
+						c-3.703,0.835-7.237,2.477-10.605,4.927c-3.369,2.45-6.388,5.817-9.06,10.104c-1.646,2.643-3.029,5.413-4.167,8.302
+						c-1.342-6.187-3.675-11.268-7.005-15.233c-5.734-7.014-12.693-10.91-20.876-11.69c-8.129-0.779-16.422,1.392-24.884,6.513
+						c1.503-13.582,2.672-33.485,3.507-59.705l-16.033,0.584c-0.501,22.659-1.545,46.207-3.131,70.644
+						c-0.971,14.96-2.159,30.364-3.558,46.2c-2.189-4.689-6.387-9.262-12.603-13.717c-10.076-7.236-18.65-12.471-25.719-15.699
+						c-7.126-3.284-6.235-6.764,2.672-10.438c8.906-3.729,15.977-4.814,21.21-3.257c5.177,1.503,7.653-0.028,7.432-4.593
+						c-0.279-4.621-2.087-8.016-5.428-10.188c-3.34-2.226-9.102-2.727-17.285-1.503c-15.477,3.453-24.913,9.77-28.308,18.956
+						c-3.34,9.131-3.369,15.252-0.083,18.37c3.284,3.007,10.659,6.903,22.128,11.69c11.411,4.732,17.59,9.298,18.538,13.695
+						c0.222,1.113,0.209,2.283-0.042,3.506c-0.25,1.226-0.739,2.41-1.461,3.55c-0.724,1.142-1.699,2.144-2.923,3.006
+						c-1.225,0.864-2.672,1.462-4.342,1.796c-6.793,1.336-13.39,1.642-19.791,0.918c-1.616-0.167-3.146-0.612-4.593-1.336
+						c-1.449-0.723-2.812-1.545-4.092-2.463c-1.281-0.919-2.477-1.907-3.59-2.965c-1.115-1.057-2.117-2.004-3.006-2.84
+						c-3.674-3.451-5.734-0.277-6.179,9.52c-0.447,9.799,5.983,15.477,19.289,17.035c13.249,1.67,24.772,0,34.571-5.01
+						c5.377-2.795,9.334-5.982,11.893-9.556c-0.389,4.023-0.786,8.065-1.202,12.144c14.918,2.004,28.78,0.974,41.585-3.09
+						c12.914-4.063,21.849-9.797,26.805-17.201c1.989-2.984,3.595-6.459,4.829-10.407c0.822,2.7,1.869,5.271,3.171,7.693
+						c3.006,5.595,7.014,10.146,12.025,13.653c5.01,3.507,10.896,5.845,17.66,7.014c6.764,1.17,14.125,0.836,22.088-1.002
+						c3.84-0.889,7.25-2.199,10.229-3.924c2.977-1.725,5.512-3.801,7.6-6.222c2.088-2.422,3.77-5.136,5.051-8.142
+						s2.143-6.234,2.59-9.687c0.219-1.591,0.348-3.181,0.403-4.77c0.165,4.082,0.298,8.098,0.39,12.034
+						c0.137,5.958,0.125,11.663-0.043,17.119c0.111,1.168,0.404,2.17,0.877,3.006c0.473,0.834,1.295,1.517,2.465,2.045
+						c1.168,0.531,2.797,0.906,4.885,1.128c2.088,0.223,4.828,0.279,8.225,0.167c-0.279-3.674-0.572-7.891-0.877-12.65
+						c-0.307-4.76-0.529-9.604-0.668-14.53s-0.125-9.714,0.041-14.362c0.168-4.647,0.586-8.697,1.254-12.15
+						c0.166-0.945,0.779-2.254,1.836-3.924s2.422-3.438,4.092-5.303s3.578-3.717,5.721-5.553c2.143-1.838,4.426-3.382,6.848-4.635
+						c2.422-1.253,4.912-2.116,7.473-2.589c2.561-0.472,5.064-0.292,7.516,0.543c1.725,0.613,3.174,1.879,4.342,3.8
+						c1.17,1.92,2.102,4.3,2.799,7.139c0.695,2.84,1.195,5.984,1.502,9.437c0.305,3.452,0.486,7.015,0.543,10.688
+						c0.055,3.674,0,7.32-0.168,10.939c-0.166,3.619-0.361,6.972-0.584,10.062s-0.459,5.833-0.709,8.226
+						c-0.25,2.394-0.432,4.175-0.543,5.344c-0.113,1.169-0.322,2.297-0.627,3.382c-0.307,1.085-0.584,2.102-0.834,3.048
+						c-0.252,0.947-0.432,1.795-0.543,2.547c-0.113,0.752,0,1.406,0.334,1.963c0.5,0.834,1.531,1.336,3.09,1.502
+						c1.557,0.168,3.186,0.084,4.885-0.25c1.697-0.334,3.242-0.822,4.635-1.461c1.391-0.639,2.141-1.322,2.254-2.046
+						c0.264-1.242,0.531-2.649,0.805-4.2c2.291,1.591,4.655,2.823,7.107,3.657c2.701,0.919,5.666,1.532,8.895,1.837
+						c3.227,0.305,6.818,0.431,10.771,0.376c3.953-0.056,8.461-0.14,13.527-0.251c4.564-0.055,8.713-0.277,12.441-0.668
+						c3.73-0.389,7.1-0.793,10.105-1.211c3.006-0.417,5.719-0.779,8.141-1.085s4.635-0.431,6.639-0.376
+						c1.67,0.056,3.033-0.055,4.092-0.334c0.589-0.155,1.067-0.391,1.458-0.693c1.294,7.069,3.288,10.366,5.987,9.879
+						c4.676-0.835,7.041-2.367,7.098-4.593l0.355-8.159c2.168,4.152,5.54,6.55,10.146,7.157c5.176,0.668,9.602-4.259,13.275-14.78
+						c3.674-10.576,7.738-18.008,12.191-22.295c4.064,5.232,7.543,10.008,10.438,14.32c2.895,4.314,5.205,8.225,6.932,11.732
+						c3.396,7.014,35.74,45.194,40.025,48.033C629.62,183.365,635.02,180.22,634.575,175.544z M255.19,122.5
+						c-5.791,6.96-17.424,10.41-34.904,10.354c0.723-35.518,6.43-55.084,17.118-58.703c10.688-3.619,17.814-2.923,21.377,2.088
+						c3.619,4.955,5.344,12.164,5.177,21.627C263.846,107.386,260.923,115.599,255.19,122.5z M342.352,112.146
+						c-0.557,3.006-1.795,5.846-3.715,8.518c-1.922,2.672-4.664,5.01-8.227,7.014c-2.951,1.67-6.012,2.673-9.186,3.007
+						c-3.172,0.334-6.262,0.125-9.268-0.626c-3.006-0.752-5.875-1.963-8.602-3.633c-2.728-1.67-5.123-3.645-7.182-5.929
+						c-2.059-2.282-3.729-4.814-5.01-7.599c-1.281-2.783-1.977-5.679-2.088-8.685c-0.279-5.456-0.041-10.229,0.71-14.321
+						s1.907-7.486,3.466-10.188c1.557-2.699,3.507-4.718,5.846-6.054c2.338-1.336,4.98-2.004,7.932-2.004
+						c3.174,0.056,6.318,0.668,9.436,1.837c3.119,1.169,6.082,2.756,8.895,4.76c2.811,2.004,5.385,4.329,7.725,6.973
+						c2.338,2.645,4.285,5.469,5.844,8.476c1.559,3.006,2.658,6.083,3.299,9.228C342.866,106.063,342.909,109.14,342.352,112.146z
+						 M525.501,137.682l1.763-40.483c0.59-13.208,0.115-23.004-1.422-29.393c10.467,11.444,18.62,21.745,24.449,30.897
+						C538.21,114.249,529.951,127.241,525.501,137.682z"/>
+					<polygon points="129.031,150.896 79.746,121.915 36.954,159.833 49.286,104.004 0,75.023 56.907,69.5 69.239,13.671 92.078,66.086 
+						148.985,60.563 106.192,98.48 	"/>
+				</g>
+			</svg>
+		</a>
+
+
+<!--
+			<p class="site-description">
+			aka “vago sbonzix”		</p>
+	-->
+</div><!-- .site-branding -->
+	
+	<nav id="site-navigation" class="primary-navigation" aria-label="Menu principale">
+		<div class="menu-button-container">
+			<button id="primary-mobile-menu" class="button" aria-controls="primary-menu-list" aria-expanded="false">
+				<span class="dropdown-icon open">Menu					<svg class="svg-icon" width="24" height="24" aria-hidden="true" role="img" focusable="false" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M4.5 6H19.5V7.5H4.5V6ZM4.5 12H19.5V13.5H4.5V12ZM19.5 18H4.5V19.5H19.5V18Z" fill="currentColor"/></svg>				</span>
+				<span class="dropdown-icon close">Chiudi					<svg class="svg-icon" width="24" height="24" aria-hidden="true" role="img" focusable="false" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 10.9394L5.53033 4.46973L4.46967 5.53039L10.9393 12.0001L4.46967 18.4697L5.53033 19.5304L12 13.0607L18.4697 19.5304L19.5303 18.4697L13.0607 12.0001L19.5303 5.53039L18.4697 4.46973L12 10.9394Z" fill="currentColor"/></svg>				</span>
+			</button><!-- #primary-mobile-menu -->
+		</div><!-- .menu-button-container -->
+		<div class="primary-menu-container"><ul id="primary-menu-list" class="menu-wrapper"><li id="menu-item-611" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-611"><a href="https://stefanobonzi.it/">Home</a></li>
+<li id="menu-item-610" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-150 current_page_item current_page_parent menu-item-610"><a href="https://stefanobonzi.it/blog" aria-current="page">Blog</a></li>
+</ul></div>	</nav><!-- #site-navigation -->
+	
+</header><!-- #masthead -->
+
+	<div id="content" class="site-content">
+		<div id="primary" class="content-area">
+			<main id="main" class="site-main">
+
+	<header class="page-header alignwide">
+		<h1 class="page-title">Blog</h1>
+	</header><!-- .page-header -->
+
+
+<article id="post-5455" class="post-5455 post type-post status-publish format-standard hentry category-uncategorized entry">
+
+	
+<header class="entry-header">
+	<h2 class="entry-title default-max-width"><a href="https://stefanobonzi.it/france-2023">France 2023</a></h2></header><!-- .entry-header -->
+
+	<div class="entry-content">
+			</div><!-- .entry-content -->
+
+	<footer class="entry-footer default-max-width">
+		<span class="posted-on">Pubblicato <time class="entry-date published updated" datetime="2023-04-28T16:55:26+02:00">2023-04-28</time></span><span class="edit-link"><a class="post-edit-link" href="https://stefanobonzi.it/wp-admin/post.php?post=5455&#038;action=edit">Modifica <span class="screen-reader-text">France 2023</span></a></span><br><div class="post-taxonomies"><span class="cat-links">Categorie: <a href="https://stefanobonzi.it/category/uncategorized" rel="category tag">Uncategorized</a> </span></div>	</footer><!-- .entry-footer -->
+</article><!-- #post-${ID} -->
+
+<article id="post-4188" class="post-4188 post type-post status-publish format-standard hentry category-grandi-idee entry">
+
+	
+<header class="entry-header">
+	<h2 class="entry-title default-max-width"><a href="https://stefanobonzi.it/sempre-sia-iodato">Sempre sia iodato</a></h2></header><!-- .entry-header -->
+
+	<div class="entry-content">
+		<p>Gran­de idea per una cam­pa­gna pro-tiroide o&nbsp;sem­pli­ce­men­te per ven­de­re più&nbsp;sale</p>
+	</div><!-- .entry-content -->
+
+	<footer class="entry-footer default-max-width">
+		<span class="posted-on">Pubblicato <time class="entry-date published updated" datetime="2022-12-30T15:07:34+01:00">2022-12-30</time></span><span class="edit-link"><a class="post-edit-link" href="https://stefanobonzi.it/wp-admin/post.php?post=4188&#038;action=edit">Modifica <span class="screen-reader-text">Sempre sia iodato</span></a></span><br><div class="post-taxonomies"><span class="cat-links">Categorie: <a href="https://stefanobonzi.it/category/grandi-idee" rel="category tag">grandi idee</a> </span></div>	</footer><!-- .entry-footer -->
+</article><!-- #post-${ID} -->
+
+<article id="post-2820" class="post-2820 post type-post status-publish format-standard hentry category-uncategorized entry">
+
+	
+<header class="entry-header">
+	<h2 class="entry-title default-max-width"><a href="https://stefanobonzi.it/la-mia-scrittura">La mia scrittura</a></h2></header><!-- .entry-header -->
+
+	<div class="entry-content">
+		<p>Ma che font usa que­sto&nbsp;sito?</p>
+	</div><!-- .entry-content -->
+
+	<footer class="entry-footer default-max-width">
+		<span class="posted-on">Pubblicato <time class="entry-date published updated" datetime="2022-10-11T19:59:13+02:00">2022-10-11</time></span><span class="edit-link"><a class="post-edit-link" href="https://stefanobonzi.it/wp-admin/post.php?post=2820&#038;action=edit">Modifica <span class="screen-reader-text">La mia scrittura</span></a></span><br><div class="post-taxonomies"><span class="cat-links">Categorie: <a href="https://stefanobonzi.it/category/uncategorized" rel="category tag">Uncategorized</a> </span></div>	</footer><!-- .entry-footer -->
+</article><!-- #post-${ID} -->
+
+<article id="post-555" class="post-555 post type-post status-publish format-standard hentry category-italy category-web entry">
+
+	
+<header class="entry-header">
+	<h2 class="entry-title default-max-width"><a href="https://stefanobonzi.it/servizi-online">Servizi “online”</a></h2></header><!-- .entry-header -->
+
+	<div class="entry-content">
+		<p>Fa­re il pas­sa­por­to “on­li­ne”</p>
+	</div><!-- .entry-content -->
+
+	<footer class="entry-footer default-max-width">
+		<span class="posted-on">Pubblicato <time class="entry-date published updated" datetime="2015-02-20T18:11:27+01:00">2015-02-20</time></span><span class="edit-link"><a class="post-edit-link" href="https://stefanobonzi.it/wp-admin/post.php?post=555&#038;action=edit">Modifica <span class="screen-reader-text">Servizi “online”</span></a></span><br><div class="post-taxonomies"><span class="cat-links">Categorie: <a href="https://stefanobonzi.it/category/italy" rel="category tag">italy</a>, <a href="https://stefanobonzi.it/category/web" rel="category tag">web</a> </span></div>	</footer><!-- .entry-footer -->
+</article><!-- #post-${ID} -->
+
+<article id="post-536" class="post-536 post type-post status-publish format-standard hentry category-fun entry">
+
+	
+<header class="entry-header">
+	<h2 class="entry-title default-max-width"><a href="https://stefanobonzi.it/nord">Nord</a></h2></header><!-- .entry-header -->
+
+	<div class="entry-content">
+		<p>Nord, set­ten­trio­ne, ar­ti­de, stel­la po­la­re e&nbsp;gran­de car­ro. E&nbsp;al­la fi­ne si cer­ca&nbsp;l’est</p>
+	</div><!-- .entry-content -->
+
+	<footer class="entry-footer default-max-width">
+		<span class="posted-on">Pubblicato <time class="entry-date published updated" datetime="2011-12-12T17:24:41+01:00">2011-12-12</time></span><span class="edit-link"><a class="post-edit-link" href="https://stefanobonzi.it/wp-admin/post.php?post=536&#038;action=edit">Modifica <span class="screen-reader-text">Nord</span></a></span><br><div class="post-taxonomies"><span class="cat-links">Categorie: <a href="https://stefanobonzi.it/category/fun" rel="category tag">fun</a> </span></div>	</footer><!-- .entry-footer -->
+</article><!-- #post-${ID} -->
+
+<article id="post-490" class="post-490 post type-post status-publish format-standard hentry category-uncategorized entry">
+
+	
+<header class="entry-header">
+	<h2 class="entry-title default-max-width"><a href="https://stefanobonzi.it/flauto-rubato">Flauto rubato</a></h2></header><!-- .entry-header -->
+
+	<div class="entry-content">
+		<p>Ru­ba­re il flau­to a&nbsp;un bam­bi­no è&nbsp;un ge­sto da stron­zi. Sap­pia­te­lo, stron­zi che l’a­ve­te rubato</p>
+	</div><!-- .entry-content -->
+
+	<footer class="entry-footer default-max-width">
+		<span class="posted-on">Pubblicato <time class="entry-date published updated" datetime="2011-07-21T11:50:32+02:00">2011-07-21</time></span><span class="edit-link"><a class="post-edit-link" href="https://stefanobonzi.it/wp-admin/post.php?post=490&#038;action=edit">Modifica <span class="screen-reader-text">Flauto rubato</span></a></span><br><div class="post-taxonomies"><span class="cat-links">Categorie: <a href="https://stefanobonzi.it/category/uncategorized" rel="category tag">Uncategorized</a> </span></div>	</footer><!-- .entry-footer -->
+</article><!-- #post-${ID} -->
+
+<article id="post-193" class="post-193 post type-post status-publish format-standard hentry category-photography tag-fotografia entry">
+
+	
+<header class="entry-header">
+	<h2 class="entry-title default-max-width"><a href="https://stefanobonzi.it/la-mia-storia-fotografica">La mia storia fotografica</a></h2></header><!-- .entry-header -->
+
+	<div class="entry-content">
+		<p>Una vol­ta, fo­to­gra­fa­re mi pia­ce­va dav­ve­ro&nbsp;molto</p>
+	</div><!-- .entry-content -->
+
+	<footer class="entry-footer default-max-width">
+		<span class="posted-on">Pubblicato <time class="entry-date published updated" datetime="2010-06-04T14:45:04+02:00">2010-06-04</time></span><span class="edit-link"><a class="post-edit-link" href="https://stefanobonzi.it/wp-admin/post.php?post=193&#038;action=edit">Modifica <span class="screen-reader-text">La mia storia fotografica</span></a></span><br><div class="post-taxonomies"><span class="cat-links">Categorie: <a href="https://stefanobonzi.it/category/photography" rel="category tag">photography</a> </span><span class="tags-links">Taggato <a href="https://stefanobonzi.it/tag/fotografia" rel="tag">fotografia</a></span></div>	</footer><!-- .entry-footer -->
+</article><!-- #post-${ID} -->
+
+<article id="post-26" class="post-26 post type-post status-publish format-standard hentry category-wine tag-cuvee tag-vino tag-wine entry">
+
+	
+<header class="entry-header">
+	<h2 class="entry-title default-max-width"><a href="https://stefanobonzi.it/cuvee-terpinola-2008">Cuvée Terpinola 2008</a></h2></header><!-- .entry-header -->
+
+	<div class="entry-content">
+		<p>Co­me ro­vi­na­re del­l’ot­ti­mo&nbsp;vino</p>
+	</div><!-- .entry-content -->
+
+	<footer class="entry-footer default-max-width">
+		<span class="posted-on">Pubblicato <time class="entry-date published updated" datetime="2008-04-10T16:10:45+02:00">2008-04-10</time></span><span class="edit-link"><a class="post-edit-link" href="https://stefanobonzi.it/wp-admin/post.php?post=26&#038;action=edit">Modifica <span class="screen-reader-text">Cuvée Terpinola 2008</span></a></span><br><div class="post-taxonomies"><span class="cat-links">Categorie: <a href="https://stefanobonzi.it/category/wine" rel="category tag">wine</a> </span><span class="tags-links">Taggato <a href="https://stefanobonzi.it/tag/cuvee" rel="tag">cuvée</a>, <a href="https://stefanobonzi.it/tag/vino" rel="tag">vino</a>, <a href="https://stefanobonzi.it/tag/wine" rel="tag">wine</a></span></div>	</footer><!-- .entry-footer -->
+</article><!-- #post-${ID} -->
+			</main><!-- #main -->
+		</div><!-- #primary -->
+	</div><!-- #content -->
+
+	
+	<aside class="widget-area">
+		<section id="block-4" class="widget widget_block">
+<div class="wp-block-columns alignfull is-layout-flex wp-container-2">
+<div class="wp-block-column is-layout-flow">
+<p><strong>Mi trovi anche su</strong>:<br><a href="https://www.debaser.it/about/turkish">DeBaser</a> | <a href="https://www.bzsub.it/info/staff-didattico">Bolzano Sub</a> | <a href="https://www.facebook.com/sbonzix">Facebook</a> | <a href="https://plus.google.com/u/0/115362648589426275873">Google+</a> | <a href="https://www.last.fm/user/sbonzix">Last.fm</a> | <a href="https://twitter.com/sbonzix">Twitter</a> | <a href="https://anobii.com/sbonzix">aNobii</a> | <a href="https://foursquare.com/sbonzix">Foursquare</a> | <a href="https://www.librarything.com/profile/sbonzix">LibraryThing</a> | <a href="https://gravatar.com/sbonzix">Gravatar</a> | <a href="https://www.panoramio.com/user/sbonzix">Panoramio</a> | <a href="https://www.flickr.com/people/sbonzix/">Flickr</a> | <a href="https://www.youtube.com/user/sbonzix">YouTube</a> | <a href="https://www.colourlovers.com/lover/sbonzix">COLOURlovers</a> | <a href="https://it.linkedin.com/in/stefanobonzi">LinkedIn</a> | <a href="https://pinterest.com/sbonzix/">Pinterest</a></p>
+</div>
+</div>
+</section><section id="block-11" class="widget widget_block">
+<blockquote class="wp-block-quote is-style-plain">
+<p>I  Wish I Had / A Horse's Head / A Tiger's Heart / An Apple Bed</p>
+<cite><a href="https://www.youtube.com/watch?v=NxO3bZwddsQ">Mark Linkous (Sparklehorse)</a></cite></blockquote>
+</section>	</aside><!-- .widget-area -->
+
+
+	<footer id="colophon" class="site-footer">
+
+					<nav aria-label="Menu secondario" class="footer-navigation">
+				<ul class="footer-navigation-wrapper">
+					<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-611"><a href="https://stefanobonzi.it/"><span>Home</span></a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-150 current_page_item current_page_parent menu-item-610"><a href="https://stefanobonzi.it/blog" aria-current="page"><span>Blog</span></a></li>
+				</ul><!-- .footer-navigation-wrapper -->
+			</nav><!-- .footer-navigation -->
+				<div class="site-info">
+			<div class="site-name">
+																						<a href="https://stefanobonzi.it/">Stefano Bonzi</a>
+																		</div><!-- .site-name -->
+
+			<div class="privacy-policy"><a class="privacy-policy-link" href="https://stefanobonzi.it/cookies" rel="privacy-policy">Cookies</a></div>
+			<div class="powered-by">
+				Proudly powered by <a href="https://wordpress.org/">WordPress</a>.			</div><!-- .powered-by -->
+
+		</div><!-- .site-info -->
+	</footer><!-- #colophon -->
+
+</div><!-- #page -->
+
+<!--googleoff: all--><div id="cookie-law-info-bar" data-nosnippet="true"><h5 class="cli_messagebar_head">Cookies</h5><span>Questo sito web fa uso di cookies per migliorare l’esperienza di navigazione. Penso tu sia d’accordo, nel qual caso ti chiedo di cliccare su questo bottone: <a role='button' data-cli_action="accept" id="cookie_action_close_header" class="medium cli-plugin-button cli-plugin-main-button cookie_action_close_header cli_action_button wt-cli-accept-btn">Accetto</a><br />
+Se invece non sei d'accordo, clicca su quest'altro bottone: <a role='button' id="cookie_action_close_header_reject" class="medium cli-plugin-button cli-plugin-main-button cookie_action_close_header_reject cli_action_button wt-cli-reject-btn" data-cli_action="reject">Non accetto</a><br />
+E se poi volessi cambiare le impostazioni, dovresti pigiare questo bottone qua: <a role='button' class="medium cli-plugin-button cli-plugin-main-button cli_settings_button">Impostazioni cookies</a><br />
+Ma se sei proprio pignolettə e vuoi capire di che stiamo parlando clicca quest'ultimo bottone qua: <a href="http://stefanobonzi.it/cookies" id="CONSTANT_OPEN_URL" target="_blank" class="cli-plugin-main-link">Maggiori informazioni</a></span></div><div id="cookie-law-info-again" data-nosnippet="true"><span id="cookie_hdr_showagain">Privacy &amp; Cookies</span></div><div class="cli-modal" data-nosnippet="true" id="cliSettingsPopup" tabindex="-1" role="dialog" aria-labelledby="cliSettingsPopup" aria-hidden="true">
+  <div class="cli-modal-dialog" role="document">
+	<div class="cli-modal-content cli-bar-popup">
+		  <button type="button" class="cli-modal-close" id="cliModalClose">
+			<svg class="" viewBox="0 0 24 24"><path d="M19 6.41l-1.41-1.41-5.59 5.59-5.59-5.59-1.41 1.41 5.59 5.59-5.59 5.59 1.41 1.41 5.59-5.59 5.59 5.59 1.41-1.41-5.59-5.59z"></path><path d="M0 0h24v24h-24z" fill="none"></path></svg>
+			<span class="wt-cli-sr-only">Chiudi</span>
+		  </button>
+		  <div class="cli-modal-body">
+			<div class="cli-container-fluid cli-tab-container">
+	<div class="cli-row">
+		<div class="cli-col-12 cli-align-items-stretch cli-px-0">
+			<div class="cli-privacy-overview">
+				<h4>Privacy</h4>				<div class="cli-privacy-content">
+					<div class="cli-privacy-content-text">Questo sito web utilizza i cookie per migliorare la tua esperienza di navigazione. Tra questi cookie, quelli classificati come necessari vengono memorizzati nel browser dell'utente in quanto essenziali per il funzionamento delle funzionalità di base del sito. Utilizziamo anche cookie di terze parti che ci aiutano ad analizzare e a capire come gli utenti utilizzano il sito. Questi cookie vengono memorizzati nel tuo browser solo con il tuo consenso. L'utente ha anche la possibilità di rinunciare a questi cookie. Tuttavia, la rinuncia ad alcuni di questi cookie potrebbe avere ripercussioni sulla tua esperienza di navigazione.</div>
+				</div>
+				<a class="cli-privacy-readmore" aria-label="Mostra altro" role="button" data-readmore-text="Mostra altro" data-readless-text="Mostra meno"></a>			</div>
+		</div>
+		<div class="cli-col-12 cli-align-items-stretch cli-px-0 cli-tab-section-container">
+												<div class="cli-tab-section">
+						<div class="cli-tab-header">
+							<a role="button" tabindex="0" class="cli-nav-link cli-settings-mobile" data-target="necessary" data-toggle="cli-toggle-tab">
+								Necessary							</a>
+															<div class="wt-cli-necessary-checkbox">
+									<input type="checkbox" class="cli-user-preference-checkbox"  id="wt-cli-checkbox-necessary" data-id="checkbox-necessary" checked="checked"  />
+									<label class="form-check-label" for="wt-cli-checkbox-necessary">Necessary</label>
+								</div>
+								<span class="cli-necessary-caption">Sempre abilitato</span>
+													</div>
+						<div class="cli-tab-content">
+							<div class="cli-tab-pane cli-fade" data-id="necessary">
+								<div class="wt-cli-cookie-description">
+									Necessary cookies are absolutely essential for the website to function properly. This category only includes cookies that ensures basic functionalities and security features of the website. These cookies do not store any personal information.								</div>
+							</div>
+						</div>
+					</div>
+																	<div class="cli-tab-section">
+						<div class="cli-tab-header">
+							<a role="button" tabindex="0" class="cli-nav-link cli-settings-mobile" data-target="functional" data-toggle="cli-toggle-tab">
+								Functional							</a>
+															<div class="cli-switch">
+									<input type="checkbox" id="wt-cli-checkbox-functional" class="cli-user-preference-checkbox"  data-id="checkbox-functional" />
+									<label for="wt-cli-checkbox-functional" class="cli-slider" data-cli-enable="Abilitato" data-cli-disable="Disabilitato"><span class="wt-cli-sr-only">Functional</span></label>
+								</div>
+													</div>
+						<div class="cli-tab-content">
+							<div class="cli-tab-pane cli-fade" data-id="functional">
+								<div class="wt-cli-cookie-description">
+									Functional cookies help to perform certain functionalities like sharing the content of the website on social media platforms, collect feedbacks, and other third-party features.
+								</div>
+							</div>
+						</div>
+					</div>
+																	<div class="cli-tab-section">
+						<div class="cli-tab-header">
+							<a role="button" tabindex="0" class="cli-nav-link cli-settings-mobile" data-target="performance" data-toggle="cli-toggle-tab">
+								Performance							</a>
+															<div class="cli-switch">
+									<input type="checkbox" id="wt-cli-checkbox-performance" class="cli-user-preference-checkbox"  data-id="checkbox-performance" />
+									<label for="wt-cli-checkbox-performance" class="cli-slider" data-cli-enable="Abilitato" data-cli-disable="Disabilitato"><span class="wt-cli-sr-only">Performance</span></label>
+								</div>
+													</div>
+						<div class="cli-tab-content">
+							<div class="cli-tab-pane cli-fade" data-id="performance">
+								<div class="wt-cli-cookie-description">
+									Performance cookies are used to understand and analyze the key performance indexes of the website which helps in delivering a better user experience for the visitors.
+								</div>
+							</div>
+						</div>
+					</div>
+																	<div class="cli-tab-section">
+						<div class="cli-tab-header">
+							<a role="button" tabindex="0" class="cli-nav-link cli-settings-mobile" data-target="analytics" data-toggle="cli-toggle-tab">
+								Analytics							</a>
+															<div class="cli-switch">
+									<input type="checkbox" id="wt-cli-checkbox-analytics" class="cli-user-preference-checkbox"  data-id="checkbox-analytics" />
+									<label for="wt-cli-checkbox-analytics" class="cli-slider" data-cli-enable="Abilitato" data-cli-disable="Disabilitato"><span class="wt-cli-sr-only">Analytics</span></label>
+								</div>
+													</div>
+						<div class="cli-tab-content">
+							<div class="cli-tab-pane cli-fade" data-id="analytics">
+								<div class="wt-cli-cookie-description">
+									Analytical cookies are used to understand how visitors interact with the website. These cookies help provide information on metrics the number of visitors, bounce rate, traffic source, etc.
+								</div>
+							</div>
+						</div>
+					</div>
+																	<div class="cli-tab-section">
+						<div class="cli-tab-header">
+							<a role="button" tabindex="0" class="cli-nav-link cli-settings-mobile" data-target="advertisement" data-toggle="cli-toggle-tab">
+								Advertisement							</a>
+															<div class="cli-switch">
+									<input type="checkbox" id="wt-cli-checkbox-advertisement" class="cli-user-preference-checkbox"  data-id="checkbox-advertisement" />
+									<label for="wt-cli-checkbox-advertisement" class="cli-slider" data-cli-enable="Abilitato" data-cli-disable="Disabilitato"><span class="wt-cli-sr-only">Advertisement</span></label>
+								</div>
+													</div>
+						<div class="cli-tab-content">
+							<div class="cli-tab-pane cli-fade" data-id="advertisement">
+								<div class="wt-cli-cookie-description">
+									Advertisement cookies are used to provide visitors with relevant ads and marketing campaigns. These cookies track visitors across websites and collect information to provide customized ads.
+								</div>
+							</div>
+						</div>
+					</div>
+																	<div class="cli-tab-section">
+						<div class="cli-tab-header">
+							<a role="button" tabindex="0" class="cli-nav-link cli-settings-mobile" data-target="others" data-toggle="cli-toggle-tab">
+								Others							</a>
+															<div class="cli-switch">
+									<input type="checkbox" id="wt-cli-checkbox-others" class="cli-user-preference-checkbox"  data-id="checkbox-others" />
+									<label for="wt-cli-checkbox-others" class="cli-slider" data-cli-enable="Abilitato" data-cli-disable="Disabilitato"><span class="wt-cli-sr-only">Others</span></label>
+								</div>
+													</div>
+						<div class="cli-tab-content">
+							<div class="cli-tab-pane cli-fade" data-id="others">
+								<div class="wt-cli-cookie-description">
+									Other uncategorized cookies are those that are being analyzed and have not been classified into a category as yet.
+								</div>
+							</div>
+						</div>
+					</div>
+										</div>
+	</div>
+</div>
+		  </div>
+		  <div class="cli-modal-footer">
+			<div class="wt-cli-element cli-container-fluid cli-tab-container">
+				<div class="cli-row">
+					<div class="cli-col-12 cli-align-items-stretch cli-px-0">
+						<div class="cli-tab-footer wt-cli-privacy-overview-actions">
+						
+															<a id="wt-cli-privacy-save-btn" role="button" tabindex="0" data-cli-action="accept" class="wt-cli-privacy-btn cli_setting_save_button wt-cli-privacy-accept-btn cli-btn">ACCETTA E SALVA</a>
+													</div>
+												<div class="wt-cli-ckyes-footer-section">
+							<div class="wt-cli-ckyes-brand-logo">Powered by <a href="https://www.cookieyes.com/"><img src="https://stefanobonzi.it/wp-content/plugins/cookie-law-info/legacy/public/images/logo-cookieyes.svg" alt="CookieYes Logo"></a></div>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+  </div>
+</div>
+<div class="cli-modal-backdrop cli-fade cli-settings-overlay"></div>
+<div class="cli-modal-backdrop cli-fade cli-popupbar-overlay"></div>
+<!--googleon: all--><script>document.body.classList.remove("no-js");</script>	<script>
+	if ( -1 !== navigator.userAgent.indexOf( 'MSIE' ) || -1 !== navigator.appVersion.indexOf( 'Trident/' ) ) {
+		document.body.classList.add( 'is-IE' );
+	}
+	</script>
+	<style id='core-block-supports-inline-css'>
+.wp-container-2.wp-container-2{flex-wrap:nowrap;}
+</style>
+<link rel='stylesheet' id='cookie-law-info-table-css' href='https://stefanobonzi.it/wp-content/plugins/cookie-law-info/legacy/public/css/cookie-law-info-table.css?ver=3.1.1' media='all' />
+<script src='https://stefanobonzi.it/wp-content/plugins/contact-form-7/includes/swv/js/index.js?ver=5.7.7' id='swv-js'></script>
+<script id='contact-form-7-js-extra'>
+var wpcf7 = {"api":{"root":"https:\/\/stefanobonzi.it\/wp-json\/","namespace":"contact-form-7\/v1"},"cached":"1"};
+</script>
+<script src='https://stefanobonzi.it/wp-content/plugins/contact-form-7/includes/js/index.js?ver=5.7.7' id='contact-form-7-js'></script>
+<script id='twenty-twenty-one-ie11-polyfills-js-after'>
+( Element.prototype.matches && Element.prototype.closest && window.NodeList && NodeList.prototype.forEach ) || document.write( '<script src="https://stefanobonzi.it/wp-content/themes/twentytwentyone/assets/js/polyfills.js?ver=1.0"></scr' + 'ipt>' );
+</script>
+<script src='https://stefanobonzi.it/wp-content/themes/twentytwentyone/assets/js/primary-navigation.js?ver=1.0' id='twenty-twenty-one-primary-navigation-script-js'></script>
+<script src='https://stefanobonzi.it/wp-content/themes/twentytwentyone/assets/js/responsive-embeds.js?ver=1.0' id='twenty-twenty-one-responsive-embeds-script-js'></script>
+<script src='https://stefanobonzi.it/wp-content/plugins/wp-typography/js/clean-clipboard.min.js?ver=5.9.1' id='wp-typography-cleanup-clipboard-js'></script>
+		<script>
+		/(trident|msie)/i.test(navigator.userAgent)&&document.getElementById&&window.addEventListener&&window.addEventListener("hashchange",(function(){var t,e=location.hash.substring(1);/^[A-z0-9_-]+$/.test(e)&&(t=document.getElementById(e))&&(/^(?:a|select|input|button|textarea)$/i.test(t.tagName)||(t.tabIndex=-1),t.focus())}),!1);
+		</script>
+		
+</body>
+</html>
+
+
+<!-- Page cached by LiteSpeed Cache 5.5 on 2023-06-30 17:10:26 -->
