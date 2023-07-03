@@ -1,72 +1,23 @@
 ﻿@font-face {
-  font-family: 'sbonzixregular';
-  src: url('http://stefanobonzi.it/wp-content/themes/twentytwentyone-child/sbonzix-webfont.woff2') format('woff2');
+  font-family: "sbonzixregular";
+  src: url("sbonzix-webfont.woff2");
   font-weight: normal;
   font-style: normal;
 }
 
-:root {
-  --global--font-primary: var(--font-headings, "sbonzixregular", sans-serif);
-  --global--font-secondary: var(--font-base, "sbonzixregular", sans-serif);
+* {
+  margin: 0;
+  padding: 0;
 }
 
 body {
   background: url("img/main-bck-body.png") repeat;
-}
-form p {
-  margin-bottom: 1em;
-}
-
-.faq {
-  dd {
-    margin-bottom: 2em;
-  }
-
-  dt {
-    font-size: 1.25em;
-    font-weight: normal;
-    background-color: #fcf;
-  }
+  font: 20px/28px "sbonzixregular";
+  padding: 7px;
+  width: 30em;
+  margin: 0 auto;
 }
 
-cite a,
-a:link,
-a:visited {
-  color: #00c !important;
-}
-
-strong {
-  font-style: normal;
-  font-weight: normal;
-  background-color: #fcf;
-}
-
-em {
-  font-style: normal;
-  font-weight: normal;
-  background-color: #cff;
-}
-
-blockquote p {
-  font-weight: normal;
-}
-
-ins {
-  text-decoration: none;
-  background-color: #cfc;
-}
-
-.nav-links .post-title {
-  font-weight: normal;
-  color: #00c;
-  text-decoration: underline;
-}
-
-a:active,
-a:focus {
-  background: transparent !important;
-}
-
-#site-navigation {
-  text-transform: uppercase;
+p {
+  margin-bottom: 28px;
 }

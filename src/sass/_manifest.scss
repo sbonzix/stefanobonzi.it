@@ -1,4 +1,4 @@
-/*
+﻿/*
 	Theme Name: sbonzix2023
 	Theme URI: https://stefanobonzi.it/wp-content/themes/sbonzix2023/
 	Author: Stefano Bonzi
@@ -10,25 +10,3 @@
 	Text Domain: sbonzix2023
 	Tags: 
 */
-@font-face {
-  font-family: "sbonzixregular";
-  src: url("sbonzix-webfont.woff2");
-  font-weight: normal;
-  font-style: normal;
-}
-* {
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  background: url("img/main-bck-body.png") repeat;
-  font: 20px/28px "sbonzixregular";
-  padding: 7px;
-  width: 30em;
-  margin: 0 auto;
-}
-
-p {
-  margin-bottom: 28px;
-}
