@@ -1,23 +1,97 @@
-﻿@font-face {
+﻿@use "sass:map";
+
+@font-face {
   font-family: "sbonzixregular";
   src: url("sbonzix-webfont.woff2");
   font-weight: normal;
   font-style: normal;
 }
 
+$line-height-base: 1.4;
+$font-size-base: 20px;
+$font-size-factors: ("h1": 1.95, "h2": 1.55, "h3": 1.25, "body": 1);
+$font-sizes: ("h1": 1.95em, "h2": 1.55em, "h3": 1.25em, "body": 1em);
+$line-height: $font-size-base * $line-height-base;
+
 * {
   margin: 0;
   padding: 0;
 }
 
+:root {
+  font: {
+    size: $font-size-base;
+    style: normal;
+    weight: normal;
+    family: "sbonzixregular";
+  }
+
+  line-height: $line-height-base;
+}
+
 body {
   background: url("img/main-bck-body.png") repeat;
-  font: 20px/28px "sbonzixregular";
-  padding: 7px;
+
+  padding: {
+    top: calc((($line-height-base * $font-size-base) - $font-size-base) / 2 + 1px);
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+
   width: 30em;
   margin: 0 auto;
 }
 
 p {
-  margin-bottom: 28px;
+  line-height: $line-height;
+
+  margin: {
+    top: 0;
+    bottom: $line-height;
+    right: 0;
+    left: 0;
+  }
+
+  font: {
+    size: map.get($font-sizes, "body");
+    family: "sbonzixregular";
+    weight: normal;
+    style: normal;
+  }
+}
+
+h2 {
+  line-height: $line-height * 2;
+  margin: {
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+  }
+
+  font: {
+    size: map.get($font-sizes, "h2");
+    family: "sbonzixregular";
+    weight: normal;
+    style: normal;
+  }
+}
+
+h1 {
+  line-height: $line-height * 3;
+
+  margin: {
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+  }
+
+  font: {
+    size: map.get($font-sizes, "h1");
+    family: "sbonzixregular";
+    weight: normal;
+    style: normal;
+  }
 }
