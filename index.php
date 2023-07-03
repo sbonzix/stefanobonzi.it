@@ -3,14 +3,12 @@
  *
  * @package sbonzix2023
  */
-get_header();
+?><? php get_header(); ?>
 
-if ( have_posts() ) : while ( have_posts() ): the_post(); ?>
-	<div id="post-<?php the_ID(); ?>">
-		<h2><?php the_title(); ?></h2>
-		<div class="post-excerpt"><?php the_excerpt(); ?></div>
-	</div>
 <?php
-	endwhile;
+  if ( have_posts() ) : while ( have_posts() ): the_post();
+    get_template_part( 'partials/content', get_post_type() );
+  endwhile;
 	endif;
-get_footer(); ?>
+?>
+<?php get_footer(); ?>
