@@ -1,14 +1,12 @@
 /*
-	Theme Name: sbonzix2023
-	Theme URI: https://stefanobonzi.it/wp-content/themes/sbonzix2023/
-	Author: Stefano Bonzi
-	Author URI: https://stefanobonzi.it/
-	Description: sbonzix 2023 WP theme
-	Version: 1.0.0
-	License: GNU General Public License v2 or later
-	License URI: http://www.gnu.org/licenses/gpl-2.0.html
-	Text Domain: sbonzix2023
-	Tags: 
+Theme Name: sbonzix
+Template: blockbase
+Theme URI: https://stefanobonzi.it/wp-content/themes/sbonzix
+Author: Stefano Bonzi	
+Author URI: https://stefanobonzi.it
+Description: Theme for stefanobonzi.it, a child theme of Blockbase theme by Automatic
+Version: 1.0.0
+Text Domain: sbonzix
 */
 @font-face {
   font-family: "sbonzixregular";
@@ -22,20 +20,18 @@
 }
 
 :root {
-  font-size: 20px;
+  font-size: 18px;
   font-style: normal;
   font-weight: normal;
   font-family: "sbonzixregular";
-  line-height: 1.4;
+  line-height: 1.5555555556;
 }
 
 body {
   background: url("img/main-bck-body.png") repeat;
-  padding-top: 5px;
   padding-right: 0;
   padding-bottom: 0;
   padding-left: 0;
-  width: 30em;
   margin: 0 auto;
 }
 
@@ -52,25 +48,30 @@ p {
 }
 
 h2 {
-  line-height: 56px;
+  line-height: 28px;
   margin-top: 0;
   margin-bottom: 0;
   margin-right: 0;
   margin-left: 0;
-  font-size: 1.55em;
-  font-family: "sbonzixregular";
+  font-size: 1em !important;
+  font-family: "sbonzixregular" !important;
   font-weight: normal;
   font-style: normal;
 }
 
-h1 {
-  line-height: 84px;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 28px;
   margin-top: 0;
   margin-bottom: 0;
   margin-right: 0;
   margin-left: 0;
-  font-size: 1.95em;
-  font-family: "sbonzixregular";
+  font-size: 1em !important;
+  font-family: "sbonzixregular" !important;
   font-weight: normal;
   font-style: normal;
 }

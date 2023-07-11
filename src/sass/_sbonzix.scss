@@ -7,10 +7,20 @@
   font-style: normal;
 }
 
-$line-height-base: 1.4;
-$font-size-base: 20px;
-$font-size-factors: ("h1": 1.95, "h2": 1.55, "h3": 1.25, "body": 1);
-$font-sizes: ("h1": 1.95em, "h2": 1.55em, "h3": 1.25em, "body": 1em);
+$line-height-base: 1.55555555555555556;
+$font-size-base: 18px;
+$font-size-factors: (
+  "h1": 1.95,
+  "h2": 1.55,
+  "h3": 1.25,
+  "body": 1
+);
+$font-sizes: (
+  "h1": 1em,
+  "h2": 1em,
+  "h3": 1em,
+  "body": 1em
+);
 $line-height: $font-size-base * $line-height-base;
 
 * {
@@ -33,13 +43,13 @@ body {
   background: url("img/main-bck-body.png") repeat;
 
   padding: {
-    top: calc((($line-height-base * $font-size-base) - $font-size-base) / 2 + 1px);
+    //top: calc((($line-height-base * $font-size-base) - $font-size-base) / 2 + 1px);
     right: 0;
     bottom: 0;
     left: 0;
   }
 
-  width: 30em;
+  //width: 30em;
   margin: 0 auto;
 }
 
@@ -62,7 +72,7 @@ p {
 }
 
 h2 {
-  line-height: $line-height * 2;
+  line-height: $line-height; // * 2;
   margin: {
     top: 0;
     bottom: 0;
@@ -71,15 +81,20 @@ h2 {
   }
 
   font: {
-    size: map.get($font-sizes, "h2");
-    family: "sbonzixregular";
+    size: map.get($font-sizes, "h2") !important;
+    family: "sbonzixregular" !important;
     weight: normal;
     style: normal;
   }
 }
 
-h1 {
-  line-height: $line-height * 3;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: $line-height; // * 3;
 
   margin: {
     top: 0;
@@ -89,8 +104,8 @@ h1 {
   }
 
   font: {
-    size: map.get($font-sizes, "h1");
-    family: "sbonzixregular";
+    size: map.get($font-sizes, "h1") !important;
+    family: "sbonzixregular" !important;
     weight: normal;
     style: normal;
   }
